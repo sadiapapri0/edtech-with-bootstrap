@@ -1,0 +1,122 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.carousel-caption {
+    bottom: 100px;
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    margin-top: 25px;
+    font-size: 60px;
+    text-transform: capitalize;
+    line-height: 75px;
+    letter-spacing: 2px;
+}
+
+.carousel-caption p {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+.accordion-width {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* responsive css */
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 0;
+    }
+
+    .carousel-caption h1 {
+        font-size: 5px;
+    }
+
+    .carousel-caption p {
+        font-size: 5px;
+        line-height: 5px;
+    }
+
+    .carousel-caption div button {
+        margin-top: 0;
+        padding-bottom: 0;
+        font-size: 2px;
+    }
+
+    .popular-course-caption h1 {
+        font-size: 15px;
+    }
+}
+
+/* responsive for medium devices */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 0;
+    }
+
+    .carousel-caption h1 {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    .carousel-caption p {
+        margin: auto;
+        padding: 0 auto;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .carousel-caption .btn-responsive {
+        /* fw-bold px-5 py-3 fs-5 mt-4 */
+        padding: 0;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .explore-elearning {
+        height: 500px;
+    }
+
+    .explore-elearning img {
+        width: 300px;
+        height: 500px;
+    }
+
+    .explore-elearning h1 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+}
